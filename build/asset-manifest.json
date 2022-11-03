@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32cf73e3.css",
+    "main.js": "/static/js/main.4dcc8334.js",
+    "static/js/787.39bb0775.chunk.js": "/static/js/787.39bb0775.chunk.js",
+    "static/media/backgroundImage.jpg": "/static/media/backgroundImage.60d59a12cf5b732047e1.jpg",
+    "static/media/background.jpg": "/static/media/background.274a4c50175090858f38.jpg",
+    "static/media/ModalRight.jpg": "/static/media/ModalRight.c2d2e93c940ed4955edf.jpg",
+    "static/media/ModalLeftImg.jpg": "/static/media/ModalLeftImg.f8bcd8024cb10a2991c9.jpg",
+    "static/media/LoginPageBackground.jpg": "/static/media/LoginPageBackground.b83d572d378c7183a53d.jpg",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.e615bbcb258550973c16.ttf",
+    "static/media/PartTimeJobsBackground2.jpg": "/static/media/PartTimeJobsBackground2.d332b7b24f29dbd75aac.jpg",
+    "static/media/OneTimeJobBackground.jpg": "/static/media/OneTimeJobBackground.8adda644a4c00b16a01f.jpg",
+    "static/media/EmployerLoginPage.jpg": "/static/media/EmployerLoginPage.9a916f0f1a718c70d715.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.b823fc0dbb5a5f0c21bb.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.59edf72a325ac2048d60.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.ebb7a127d2d8ee6f1832.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.0d03b1bbd1d62c1e1284.ttf",
+    "static/media/loginRequest.png": "/static/media/loginRequest.b47f8816390ede132ccc.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.0caf4c6cf244a90efcc5.woff2",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.4baccb548138840fa33a.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
+    "index.html": "/index.html",
+    "main.32cf73e3.css.map": "/static/css/main.32cf73e3.css.map",
+    "main.4dcc8334.js.map": "/static/js/main.4dcc8334.js.map",
+    "787.39bb0775.chunk.js.map": "/static/js/787.39bb0775.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32cf73e3.css",
+    "static/js/main.4dcc8334.js"
+  ]
+}
