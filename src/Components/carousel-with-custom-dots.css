@@ -1,0 +1,18 @@
+.custom-dot {
+  border: 1px solid #eee;
+  margin: 5px;
+  padding-left: 5px;
+  outline: none;
+}
+
+.custom-dot--active {
+  transform: scale(1.1);
+  outline: auto;
+  outline-color: #858585;
+}
+
+@media (max-width: 420px) {
+  .custom-dot {
+    display: none;
+  }
+}

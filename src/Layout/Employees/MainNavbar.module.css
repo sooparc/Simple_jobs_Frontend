@@ -1,0 +1,33 @@
+.navbarIcon {
+  width: 100%;
+  top: 0;
+}
+
+.navbarImg {
+  position: absolute;
+  width: 10%;
+  top: 40%;
+}
+
+.navbarLink {
+  color: #000;
+  margin-top: 5px;
+}
+
+.navbarLink:hover {
+  color: #000;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .navbarImg {
+    position: absolute;
+    width: 25%;
+    top: 47%;
+  }
+}

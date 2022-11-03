@@ -1,0 +1,163 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  width: 60%;
+  padding: 40px;
+  padding-bottom: 80px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.profile {
+  font-size: 25px;
+}
+
+.container2 {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.loginMessageTitle {
+  font-size: 28px;
+  letter-spacing: 1.6px;
+}
+
+.loginImg {
+  width: 25%;
+}
+
+.loginMessage {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.userIcon {
+  font-size: 70px;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.btn1 {
+  display: inline-block;
+  border: 1px solid rgba(0, 112, 50, 0.95);
+  border-radius: 5px;
+  padding: 7px;
+  background-color: rgba(0, 112, 50, 0.95);
+  color: #fff;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.btn2 {
+  display: inline-block;
+  border: 1px solid #717171;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: #717171;
+  color: #fff;
+}
+
+.editLink {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.editLink:hover {
+  color: #000;
+}
+
+.deleteBtn {
+  border: 1px solid #e91818;
+  background-color: #e91818;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7.5px;
+}
+
+/* Toast */
+
+.toast {
+  background-color: #fff;
+  position: absolute;
+  padding: 0 10px;
+}
+
+.cancelButton {
+  text-align: right;
+  border: 1px solid #78c6dc;
+  background-color: #78c6dc;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.deleteButton {
+  border: 1px solid #eeeeee;
+  background-color: #eeeeee;
+  color: #000;
+  border-radius: 5px;
+}
+
+.deleteButton:hover {
+  border: 1px solid #e91818;
+  background-color: #e91818;
+  color: #fff;
+  transition: 0.3s;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 330px;
+  }
+
+  .profile {
+    font-size: 20px;
+  }
+
+  .userIcon {
+    font-size: 50px;
+  }
+
+  .editLink {
+    margin-right: 5px;
+    font-size: 12.5px;
+    padding: 10px;
+  }
+
+  .deleteBtn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 16px;
+  }
+
+  .loginImg {
+    width: 60%;
+  }
+
+  .loginMessage {
+    font-size: 15px;
+  }
+}

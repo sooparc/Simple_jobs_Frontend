@@ -1,0 +1,127 @@
+.body {
+  background: url("../../Assets/EmployerLoginPage.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: 20% 80%;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  margin: 0 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 25rem;
+  max-height: 30rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.overlay {
+  width: 25rem;
+  height: 30rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -20px;
+}
+
+.login {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+.login > h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 2.8rem;
+}
+.loginForm > label {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.loginForm > input {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: rgba(56, 56, 56, 0.9);
+  border: none;
+  border-radius: 2px;
+  min-height: 2.5rem;
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+}
+.loginForm > input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.loginForm > input:focus {
+  background-color: rgba(112, 112, 112, 0.9);
+  outline: white;
+}
+
+.link,
+.link:active,
+.link:visited {
+  margin-top: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  font-size: 1.2rem;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.button {
+  background-color: rgba(0, 112, 50, 0.95);
+  padding: 0 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

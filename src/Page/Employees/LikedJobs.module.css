@@ -1,0 +1,130 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container2 {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.loginMessageTitle {
+  font-size: 28px;
+  letter-spacing: 1.6px;
+}
+
+.loginImg {
+  width: 17%;
+}
+
+.loginMessage {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.header {
+  margin-top: 3vh;
+  font-size: 25px;
+}
+
+.bodyTitle {
+  text-align: end;
+  margin-right: 50px;
+  color: #404040;
+}
+
+.hrLine {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  width: 15%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.card {
+  padding: 0px 10px;
+  text-align: center;
+  margin: 0 30px;
+  border-top: 3px solid #858585;
+  box-shadow: 1px 5px 10px #dcdcdc;
+  margin-bottom: 30px;
+  color: #000;
+  box-shadow: 0px 10px 20px -10px rgba(20, 20, 20, 0.2);
+}
+
+.applyBtn {
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.applyBtn:hover {
+  color: #000;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.warningIcon {
+  margin-top: 25vh;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.warning {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  height: 200px;
+  width: 60%;
+  font-size: 18px;
+}
+
+@media (max-width: 575.98px) {
+  .loginImg {
+    width: 60%;
+  }
+
+  .loginMessage {
+    font-size: 15px;
+  }
+
+  .bodyTitle {
+    font-size: 20px;
+  }
+
+  .hrLine {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .warningIcon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .warning {
+    font-size: 20px;
+  }
+}

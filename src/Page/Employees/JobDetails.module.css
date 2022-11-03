@@ -1,0 +1,182 @@
+.body {
+  height: 100vh;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: justify-between;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 60px;
+  max-width: 555px;
+  border-right: 1px solid #ccc;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: justify-between;
+  gap: 8px;
+  background: linear-gradient(to bottom right, #a8def5 0%, #e6dee9 100%);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.notificationTitle {
+  color: white;
+  margin-bottom: 4px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.notificationDesc {
+  color: white;
+  margin-top: 8px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.notificationButton {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 10px 15px;
+  margin-left: 20px;
+  border: 0;
+  transition: all 0.3s;
+}
+
+.notificationButton:hover {
+  cursor: pointer;
+  background: rgba(#000, 0.1);
+}
+
+.menu {
+  margin-top: 30px;
+  display: flex;
+  justify-content: justify-between;
+  width: 100%;
+}
+
+.menuList {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.menuListTitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6f7189;
+  padding: 0 15px;
+}
+
+.menuListItem {
+  padding-top: 10px;
+  list-style: none;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  transition: all linear 0.15s;
+}
+
+.menuListItem:hover {
+  background: #f5f5f5;
+}
+
+.menuListItem a {
+  text-decoration: none;
+  text-align: left;
+  font-weight: 300;
+  color: #171228;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.mapBox {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.map {
+  margin-top: 60px;
+  flex: 1;
+  width: 500px;
+}
+
+@media (max-width: 575.98px) {
+  .body {
+    height: 140vh;
+  }
+
+  .container {
+    display: block;
+    margin-top: 0vh;
+    width: 300px;
+  }
+
+  .card {
+    border-right: 1px solid #fff;
+    margin-top: 5vh;
+    padding: 40px 0px;
+  }
+
+  .notification {
+    display: block;
+    text-align: center;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .notificationTitle {
+    font-size: 20px;
+  }
+
+  .notificationButton {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px;
+  }
+
+  .notificationDesc {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menuListItem {
+    font-size: 14px;
+  }
+
+  .map {
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  .mapBox {
+    border-left: none;
+  }
+}

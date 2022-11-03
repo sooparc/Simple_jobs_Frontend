@@ -1,0 +1,16 @@
+.navbarLink {
+  color: #000;
+  margin-top: 5px;
+}
+
+.navbarLink:hover {
+  color: #000;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 620px) {
+  .navbar {
+    width: 70%;
+    font-size: 14px;
+  }
+}
