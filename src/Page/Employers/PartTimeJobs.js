@@ -35,14 +35,16 @@ const PartTimeJobs = () => {
   useEffect((index) => {
     const id = localStorage.getItem("user_id");
 
-    axios.get("https://pt-finder.herokuapp.com/employers").then((response) => {
-      const newArr = response.data;
-      const filteredArr = newArr.find((e) => e.id == id);
-      setUserId(filteredArr.id);
-    });
+    axios
+      .get("https://simple-jobs.herokuapp.com/employers")
+      .then((response) => {
+        const newArr = response.data;
+        const filteredArr = newArr.find((e) => e.id == id);
+        setUserId(filteredArr.id);
+      });
 
     axios
-      .get("https://pt-finder.herokuapp.com/parttimejobs")
+      .get("https://simple-jobs.herokuapp.com/parttimejobs")
       .then((response) => {
         const newArr = response.data;
         const filteredArr = newArr.find((e) => e.user_id == id);
@@ -59,7 +61,7 @@ const PartTimeJobs = () => {
 
   const editClickHandler = () => {
     axios
-      .put("https://pt-finder.herokuapp.com/editparttimejob", {
+      .put("https://simple-jobs.herokuapp.com/editparttimejob", {
         companyName: companyName,
         occupation: occupation,
         salary: salary,
@@ -84,7 +86,7 @@ const PartTimeJobs = () => {
   const saveClickHandler = () => {
     if (isLoggedIn) {
       axios
-        .post("https://pt-finder.herokuapp.com/parttimejobs", {
+        .post("https://simple-jobs.herokuapp.com/parttimejobs", {
           user_id: userId,
           companyName: companyName,
           occupation: occupation,

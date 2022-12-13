@@ -62,7 +62,7 @@ const Resume = () => {
   };
 
   useEffect(() => {
-    axios.get("https://pt-finder.herokuapp.com/users").then((response) => {
+    axios.get("https://simple-jobs.herokuapp.com/users").then((response) => {
       const newArr = response.data;
       const user_id = localStorage.getItem("userId");
       const filteredObj = newArr.find((e) => e.id == user_id);
@@ -84,7 +84,7 @@ const Resume = () => {
   const saveClickHandler = (index, id) => {
     if (isLoggedIn) {
       axios
-        .put("https://pt-finder.herokuapp.com/editresume", {
+        .put("https://simple-jobs.herokuapp.com/editresume", {
           firstname: firstname,
           lastname: lastname,
           phonenumber: phonenumber,

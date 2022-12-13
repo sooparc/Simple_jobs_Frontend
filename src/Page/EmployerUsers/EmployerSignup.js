@@ -44,7 +44,7 @@ const EmployerSignup = () => {
     console.log(password);
     if (password.length >= 8) {
       axios
-        .post("https://pt-finder.herokuapp.com/employersignup", {
+        .post("https://simple-jobs.herokuapp.com/employersignup", {
           username: username,
           password: password,
           firstname: firstname,

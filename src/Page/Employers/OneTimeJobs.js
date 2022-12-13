@@ -36,14 +36,16 @@ const OneTimeJobs = () => {
 
   useEffect((index) => {
     const id = localStorage.getItem("user_id");
-    axios.get("https://pt-finder.herokuapp.com/employers").then((response) => {
-      const newArr = response.data;
-      const filteredArr = newArr.find((e) => e.id == id);
-      setUserId(filteredArr.id);
-    });
+    axios
+      .get("https://simple-jobs.herokuapp.com/employers")
+      .then((response) => {
+        const newArr = response.data;
+        const filteredArr = newArr.find((e) => e.id == id);
+        setUserId(filteredArr.id);
+      });
 
     axios
-      .get("https://pt-finder.herokuapp.com/onetimejobsdata")
+      .get("https://simple-jobs.herokuapp.com/onetimejobsdata")
       .then((response) => {
         const newArr = response.data;
         const filteredArr = newArr.find((e) => e.user_id == id);
@@ -61,7 +63,7 @@ const OneTimeJobs = () => {
   const saveClickHandler = () => {
     if (isLoggedIn) {
       axios
-        .post("https://pt-finder.herokuapp.com/onetimejobs", {
+        .post("https://simple-jobs.herokuapp.com/onetimejobs", {
           user_id: userId,
           name: name,
           occupation: occupation,
@@ -92,7 +94,7 @@ const OneTimeJobs = () => {
 
   const editClickHandler = () => {
     axios
-      .put("https://pt-finder.herokuapp.com/editonetimejob", {
+      .put("https://simple-jobs.herokuapp.com/editonetimejob", {
         name: name,
         occupation: occupation,
         salary: salary,

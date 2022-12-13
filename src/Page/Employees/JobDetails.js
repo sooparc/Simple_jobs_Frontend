@@ -26,16 +26,18 @@ const JobDetails = () => {
   const isLoggedIn = authCtx.isLoggedIn;
 
   useEffect(() => {
-    axios.get("https://pt-finder.herokuapp.com/companies").then((response) => {
-      const newArr = response.data;
-      const newId = id.id;
-      const filteredObj = newArr.find((e) => e.id == newId);
-      setSelectedCompany(filteredObj);
-      setCompanyname(filteredObj.company_name);
-      setOccupation(filteredObj.occupation);
-    });
+    axios
+      .get("https://simple-jobs.herokuapp.com/companies")
+      .then((response) => {
+        const newArr = response.data;
+        const newId = id.id;
+        const filteredObj = newArr.find((e) => e.id == newId);
+        setSelectedCompany(filteredObj);
+        setCompanyname(filteredObj.company_name);
+        setOccupation(filteredObj.occupation);
+      });
 
-    axios.get("https://pt-finder.herokuapp.com/users").then((response) => {
+    axios.get("https://simple-jobs.herokuapp.com/users").then((response) => {
       const tempArr = response.data;
       const user_id = localStorage.getItem("userId");
       const filteredUser = tempArr.find((e) => e.id == user_id);
@@ -59,7 +61,7 @@ const JobDetails = () => {
       history.push("/resume");
     } else {
       axios
-        .post("https://pt-finder.herokuapp.com/applied_jobs", {
+        .post("https://simple-jobs.herokuapp.com/applied_jobs", {
           user_id: userId,
           firstname: firstname,
           lastname: lastname,

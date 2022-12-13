@@ -14,7 +14,7 @@ const EmployerLogin = () => {
 
   const loginClickHandler = () => {
     axios
-      .post("https://pt-finder.herokuapp.com/employerlogin", {
+      .post("https://simple-jobs.herokuapp.com/employerlogin", {
         email: email,
         password: password,
       })
@@ -32,7 +32,7 @@ const EmployerLogin = () => {
 
   useEffect(() => {
     axios
-      .get("https://pt-finder.herokuapp.com/employerlogin")
+      .get("https://simple-jobs.herokuapp.com/employerlogin")
       .then((response) => {
         if (response.data.loggedIn === true) {
           localStorage.getItem("employerToken");

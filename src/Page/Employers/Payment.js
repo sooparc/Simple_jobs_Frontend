@@ -42,7 +42,7 @@ const Payment = () => {
     });
 
     axios
-      .post("https://pt-finder.herokuapp.com/paymentInfo", {
+      .post("https://simple-jobs.herokuapp.com/paymentInfo", {
         userId: userId,
         name: name,
         street: street,
@@ -58,7 +58,7 @@ const Payment = () => {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "https://pt-finder.herokuapp.com/payment",
+          "https://simple-jobs.herokuapp.com/payment",
           {
             amount: 100,
             id,

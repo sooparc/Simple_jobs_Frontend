@@ -20,7 +20,7 @@ const Login = () => {
 
   const login = () => {
     axios
-      .post("https://pt-finder.herokuapp.com/login", {
+      .post("https://simple-jobs.herokuapp.com/login", {
         email: email,
         password: password,
       })
@@ -37,7 +37,7 @@ const Login = () => {
   };
 
   useEffect(() => {
-    axios.get("https://pt-finder.herokuapp.com/login").then((response) => {
+    axios.get("https://simple-jobs.herokuapp.com/login").then((response) => {
       if (response.data.loggedIn === true) {
         localStorage.getItem("token");
       }

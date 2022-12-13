@@ -20,11 +20,13 @@ const LikedJobs = () => {
   const history = useHistory();
 
   useEffect(() => {
-    axios.get("https://pt-finder.herokuapp.com/likedjobs").then((response) => {
-      if (response.data) {
-        setLiked(response.data);
-      }
-    });
+    axios
+      .get("https://simple-jobs.herokuapp.com/likedjobs")
+      .then((response) => {
+        if (response.data) {
+          setLiked(response.data);
+        }
+      });
   }, []);
 
   const removeClickHandler = (index) => {
@@ -33,7 +35,7 @@ const LikedJobs = () => {
     const deleted = tempArr[index];
 
     axios
-      .delete(`https://pt-finder.herokuapp.com/remove/${companyname}`)
+      .delete(`https://simple-jobs.herokuapp.com/remove/${companyname}`)
       .then((response) => {
         const newArr = tempArr.filter((e) => e !== deleted);
         setLiked(newArr);

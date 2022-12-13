@@ -20,7 +20,7 @@ const SearchedJobs = () => {
 
   useEffect(() => {
     axios
-      .post(`https://pt-finder.herokuapp.com/search`, {
+      .post(`https://simple-jobs.herokuapp.com/search`, {
         jobTitle: jobId,
         city: cityId,
       })
@@ -31,7 +31,7 @@ const SearchedJobs = () => {
 
   const searchClickHandler = () => {
     axios
-      .post(`https://pt-finder.herokuapp.com/search`, {
+      .post(`https://simple-jobs.herokuapp.com/search`, {
         jobTitle: jobTitle,
         city: city,
       })
