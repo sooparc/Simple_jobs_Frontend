@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import classes from "./SignUp.module.css";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
@@ -20,7 +20,7 @@ const SignUp = () => {
 
   const validationOpt = { resolver: yupResolver(formSchema) };
 
-  const { register, handleSubmit, reset, formState } = useForm(validationOpt);
+  const { register, handleSubmit, formState } = useForm(validationOpt);
 
   const { errors } = formState;
 

@@ -63,6 +63,14 @@
   border: solid 3px red;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d3e4f3;
+}
+
 @media (max-width: 575.98px) {
   .navbar {
     height: 10vh;

@@ -80,16 +80,13 @@
 }
 
 .detailBtn {
-  padding: 7px;
-  background-color: #fff;
+  padding: 5px 10px;
+  background-color: #62a5bb;
+  color: #fff;
   border-radius: 5px;
   margin-top: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #62a5bb;
   transition: 0.3s;
-}
-
-.detailBtn:hover {
-  border: 1px solid #959595;
 }
 
 @media (max-width: 600px) {

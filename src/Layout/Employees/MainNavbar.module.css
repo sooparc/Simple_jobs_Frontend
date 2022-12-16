@@ -3,18 +3,16 @@
   top: 0;
 }
 
-.navbarImg {
-  position: absolute;
-  width: 10%;
-  top: 40%;
+.navbarLink {
+  display: inline-block;
 }
 
-.navbarLink {
+.offcanvasLink {
   color: #000;
   margin-top: 5px;
 }
 
-.navbarLink:hover {
+.offcanvasLink:hover {
   color: #000;
   background-color: #f6f6f6;
 }

@@ -127,7 +127,8 @@
 
 @media (max-width: 575.98px) {
   .body {
-    height: 140vh;
+    height: 100%;
+    margin-top: 10vh;
   }
 
   .container {

@@ -5,7 +5,7 @@ import Home from "./Page/Employees/Home";
 import MainNavbar from "./Layout/Employees/MainNavbar";
 import MainHeader from "./Components/MainHeader";
 import MainFooter from "./Layout/Employees/MainFooter";
-import Companies from "./Components/Companies";
+// import Companies from "./Components/Companies";
 import Login from "./Page/EmployeeUsers/Login";
 import SignUp from "./Page/EmployeeUsers/SignUp";
 import Profile from "./Page/Employees/Profile";
@@ -33,14 +33,14 @@ const App = () => {
     let employerToken = localStorage.getItem("employerToken");
     token && authCtx.login(token);
     employerToken && authCtx2.login(employerToken);
-  }, []);
+  }, [authCtx, authCtx2]);
 
   return (
     <>
       <Route path="/" exact>
         <MainNavbar />
         <MainHeader />
-        <Companies />
+        {/* <Companies /> */}
         <Home />
         <MainFooter />
       </Route>

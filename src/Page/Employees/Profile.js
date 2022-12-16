@@ -4,10 +4,8 @@ import classes from "./Profile.module.css";
 import { Toast } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
   faTrashCan,
   faPenToSquare,
-  faLock,
   faCircleUser,
 } from "@fortawesome/free-solid-svg-icons";
 import AuthContext from "../../Page/EmployeeUsers/auth-context";
@@ -20,11 +18,10 @@ const Profile = () => {
   const [emailAddress, setEmailAddress] = useState("");
   const [showA, setShowA] = useState(false);
   const [userId, setUserId] = useState("");
-  const email = <FontAwesomeIcon icon={faEnvelope} />;
+
   const trashCan = <FontAwesomeIcon icon={faTrashCan} />;
   const edit = <FontAwesomeIcon icon={faPenToSquare} />;
   const user = <FontAwesomeIcon icon={faCircleUser} />;
-
   const authCtx = useContext(AuthContext);
   const isLoggedIn = authCtx.isLoggedIn;
 

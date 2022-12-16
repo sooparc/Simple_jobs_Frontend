@@ -85,7 +85,8 @@ const SearchedJobs = () => {
                     {company.occupation}
                   </Card.Subtitle>
                   <Card.Text>
-                    {company.city}, {company.state}, {company.zipcode}
+                    {company.city}, {company.state}, <span> </span>
+                    {company.zip_code}
                   </Card.Text>
                   <div className="text-center">
                     <button

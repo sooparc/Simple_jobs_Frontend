@@ -102,7 +102,7 @@ const LikedJobs = () => {
       ) : (
         <div className={classes.container2}>
           <p className={classes.loginMessageTitle}>Login Required</p>
-          <img src={loginImg} className={classes.loginImg} />
+          <img src={loginImg} className={classes.loginImg} alt={loginImg} />
           <p className={classes.loginMessage}>
             Please <a href="/login">login</a> or<span> </span>
             <a href="/signup">sign up</a> <span> </span>to see saved jobs.

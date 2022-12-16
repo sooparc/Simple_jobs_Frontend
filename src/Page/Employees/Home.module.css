@@ -1,7 +1,7 @@
 .body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  padding: 0px 90px;
+  padding: 0px 140px;
 }
 
 .tabs {
@@ -12,16 +12,33 @@
   padding: 5px 40px;
 }
 
+.container {
+  display: flex;
+}
+
+.leftContainer {
+  display: block;
+  flex-basis: 30%;
+  overflow-y: auto;
+  height: 700px;
+}
+
+.rightContainer {
+  display: block;
+  flex-basis: 70%;
+}
+
 .card {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6vh;
-  width: 85%;
-  height: 190px;
+  margin-top: 50px;
+  width: 280px;
+  min-width: 200px;
+  height: 200px;
   border-radius: 5px;
   border: 1px solid #dcdcdc;
-  border-top: 4px solid #dbe5ee;
+  border-top: 4px solid #d3e4f3;
   box-shadow: 0px 5px 10px #dcdcdc;
   margin-bottom: 10px;
   color: #000;
@@ -30,11 +47,63 @@
 
 .card:hover {
   color: #000;
-}
-
-.card:hover {
   transform: translateY(-5px);
   transition: 0.3s;
+}
+
+.cardTitle {
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.detailCard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 85%;
+  height: 650px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: hidden;
+}
+
+.detailCardTitle {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.applyBtn {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  border: 1px solid #5385a4;
+  border-radius: 5px;
+  background-color: #5385a4;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.detailBtn {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #5385a4;
+  background-color: #5385a4;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.detailCardText {
+  padding: 10px;
 }
 
 .likedJobsBody {
@@ -46,17 +115,42 @@
   text-align: center;
 }
 
+.map {
+  height: 300px;
+  width: 100%;
+}
+
 @media (max-width: 575.98px) {
   .body {
-    padding: 0px 70px;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    padding: 0px 50px;
   }
 
   .tab {
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .card {
-    width: 100%;
+    width: 250px;
+    height: 240px;
+  }
+
+  .cardTitle {
+    cursor: default;
+  }
+
+  .detailBtn {
+    display: block;
+  }
+
+  .leftContainer {
+    display: block;
+    flex-basis: 100%;
+  }
+
+  .rightContainer {
+    display: none;
   }
 }

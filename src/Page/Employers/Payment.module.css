@@ -255,7 +255,9 @@
 
 @media (max-width: 420px) {
   .body {
-    height: 220vh;
+    height: 100%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
 
   .formContainer {

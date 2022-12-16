@@ -1,5 +1,4 @@
 import React from "react";
-
 import classNames from "classnames";
 import classes from "./Companies.module.css";
 import Carousel from "react-multi-carousel";
@@ -70,11 +69,11 @@ const links = [
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1200 },
-    items: 4,
+    items: 5,
   },
   tablet: {
     breakpoint: { max: 1200, min: 1000 },
-    items: 4,
+    items: 5,
   },
   mobile: {
     breakpoint: { max: 1000, min: 0 },

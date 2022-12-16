@@ -139,6 +139,7 @@
   .title {
     margin-top: 20vh;
   }
+
   .inputBox {
     min-width: 330px;
   }
@@ -158,6 +159,10 @@
 }
 
 @media (max-width: 420px) {
+  .title {
+    font-size: 20px;
+  }
+
   .inputTitle {
     font-size: 16px;
     margin-top: 20px;
@@ -177,5 +182,12 @@
     margin-top: 5px;
     padding-left: 0.5rem;
     margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  .editBtn,
+  .saveBtn {
+    padding: 5px 25px;
+    font-size: 12px;
   }
 }

@@ -4,7 +4,7 @@ import classes from "./Map.module.css";
 import "@tomtom-international/web-sdk-maps/dist/maps.css";
 import { useParams } from "react-router-dom";
 
-const Map = (props) => {
+const Map = () => {
   const mapElement = useRef();
   const [map, setMap] = useState({});
   const [latitude, setLatitude] = useState("");
@@ -14,13 +14,15 @@ const Map = (props) => {
   const id = useParams();
 
   useEffect(() => {
-    axios.get("https://pt-finder.herokuapp.com/companies").then((response) => {
-      const newArr = response.data;
-      const newId = id.id;
-      const filteredObj = newArr.find((e) => e.id == newId);
-      setLatitude(filteredObj.latitude);
-      setLongitude(filteredObj.longitude);
-    });
+    axios
+      .get("https://simple-jobs.herokuapp.com/companies")
+      .then((response) => {
+        const newArr = response.data;
+        const newId = id.id;
+        const filteredObj = newArr.find((e) => e.id == newId);
+        setLatitude(filteredObj.latitude);
+        setLongitude(filteredObj.longitude);
+      });
 
     let map = tt.map({
       key: "IZAA6GH9vFq56WSpmttQBQyST1h6IZES",
@@ -55,7 +57,7 @@ const Map = (props) => {
 
     addMarker();
     return () => map.remove();
-  }, [longitude, latitude]);
+  }, [axios, id.id, latitude, longitude]);
 
   return (
     <>

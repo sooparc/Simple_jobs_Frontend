@@ -15,13 +15,8 @@
   background-color: #fff;
 }
 
-.background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eeeeee;
-  height: 120px;
-  font-size: 18px;
+.title {
+  font-size: 22px;
 }
 
 .inputLabel {
@@ -60,8 +55,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 10px 50px;
-  background-color: #ccc;
-  border: 1px solid #ccc;
+  background-color: #5385a4;
+  border: 1px solid #5385a4;
   border-radius: 5px;
   color: #fff;
   font-size: 1.1rem;
@@ -73,7 +68,38 @@
 
 @media (max-width: 575.98px) {
   .container {
-    width: 350px;
-    position: static;
+    margin-top: 10rem;
+    width: 320px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .inputLabel {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .input {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .textarea {
+    font-size: 12px;
+  }
+
+  .saveBtn {
+    margin-top: 3rem;
+    padding: 5px 25px;
+    font-size: 12px;
+  }
+
+  .icons {
+    margin-top: 10px;
   }
 }

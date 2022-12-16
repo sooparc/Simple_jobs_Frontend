@@ -1,25 +1,26 @@
 .wrapper {
   position: absolute;
-  top: 2%;
-  left: 61%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
   position: absolute;
   top: 0%;
-  height: 6vh;
+  height: 45px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1em;
-  border-radius: 20px;
-  width: 340px;
+  border-radius: 10px;
+  width: 690px;
   -webkit-box-shadow: 0px 17px 34px -20px #7a7a7a;
   box-shadow: 0px 17px 34px -20px #7a7a7a;
 }
 
 .cardImg {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   -o-object-fit: cover;
   object-fit: cover;
   margin-left: auto;
@@ -39,26 +40,17 @@
 
 @media (max-width: 1000px) {
   .container {
-    width: 500px;
+    width: 300px;
   }
 }
 
 @media (max-width: 600px) {
-  .wrapper {
-    position: absolute;
-    top: 67%;
-    left: 0;
-    right: 0;
-  }
-
   .container {
-    position: absolute;
-    height: 6vh;
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+    width: 310px;
+    height: 40px;
+  }
+  .cardImg {
+    width: 30px;
+    height: 30px;
   }
 }

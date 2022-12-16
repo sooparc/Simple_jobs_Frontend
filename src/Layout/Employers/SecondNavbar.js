@@ -57,7 +57,7 @@ const SecondNavbar = () => {
             <Offcanvas.Title id="offcanvasNavbarLabel">
               <img
                 src={NavbarLogo}
-                style={{ width: "65%", marginLeft: "10px", marginTop: "10px" }}
+                style={{ width: "55%", marginLeft: "10px", marginTop: "10px" }}
               />
             </Offcanvas.Title>
           </Offcanvas.Header>

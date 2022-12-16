@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Navbar,
@@ -41,13 +41,10 @@ const MainNavbar = () => {
     >
       <Container fluid>
         <Navbar.Brand href="/" className="nav-justified">
-          <img className={classes.navbarImg} src={NavbarLogo} alt="" />
+          <img style={{ width: "60%" }} src={NavbarLogo} alt="" />
         </Navbar.Brand>
 
-        <Navbar.Toggle
-          aria-controls="offcanvasNavbar"
-          style={{ marginTop: "12px" }}
-        />
+        <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -58,44 +55,45 @@ const MainNavbar = () => {
               <img
                 src={NavbarLogo}
                 style={{
-                  width: "65%",
+                  width: "55%",
                   marginLeft: "10px",
                   marginTop: "10px",
                 }}
+                alt="NavbarLogo"
               />
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/" className={classes.navbarLink}>
+              <Nav.Link href="/" className={classes.offcanvasLink}>
                 <span className="mx-3">{home}</span>
                 Home
               </Nav.Link>
               {!isLoggedIn && (
-                <Nav.Link href="/login" className={classes.navbarLink}>
+                <Nav.Link href="/login" className={classes.offcanvasLink}>
                   <span className="mx-3"> {user} </span> Login / Sign up
                 </Nav.Link>
               )}
 
-              <Nav.Link href="/profile" className={classes.navbarLink}>
+              <Nav.Link href="/profile" className={classes.offcanvasLink}>
                 <span className="mx-3">{profile}</span>
                 Profile
               </Nav.Link>
-              <Nav.Link href="/likedjobs" className={classes.navbarLink}>
+              <Nav.Link href="/likedjobs" className={classes.offcanvasLink}>
                 <span className="mx-3">{heart}</span>
                 Saved Jobs
               </Nav.Link>
-              <Nav.Link href="/resume" className={classes.navbarLink}>
+              <Nav.Link href="/resume" className={classes.offcanvasLink}>
                 <span className="mx-3"> {resume} </span> My resume
               </Nav.Link>
               <NavDropdown.Divider />
-              <Nav.Link href="/homepage" className={classes.navbarLink}>
+              <Nav.Link href="/homepage" className={classes.offcanvasLink}>
                 <span className="mx-3">{employer}</span>
                 Employer
               </Nav.Link>
               {isLoggedIn && (
                 <Nav.Link
-                  className={classes.navbarLink}
+                  className={classes.offcanvasLink}
                   onClick={() => {
                     localStorage.removeItem("token");
                     localStorage.removeItem("userId");
